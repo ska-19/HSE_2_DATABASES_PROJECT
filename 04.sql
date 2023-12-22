@@ -121,18 +121,18 @@ INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
 VALUES (2, 1, 'jumping', 'Lava Slime', 2);
 
 
--- Add to the hunts table
-INSERT INTO hunts (mob_id, hunter_id, time, type, success)
-VALUES (1, 1, '4420-01-01', 'catch', false);
+-- Add to the actions table (hunts)
+INSERT INTO actions (mob_id, hunter_id, time, type, success)
+VALUES (1, 1, '4420-01-11', 'catch', false);
 
-INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+INSERT INTO actions (mob_id, hunter_id, time, type, success)
 VALUES (2, 2, '4420-01-22', 'kill', true);
 
-INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+INSERT INTO actions (mob_id, hunter_id, time, type, success)
 VALUES (5, 3, '4420-01-23', 'catch', true);
 
-INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+INSERT INTO actions (mob_id, hunter_id, time, type, success)
 VALUES (6, 4, '4420-01-25', 'kill', true);
 
-INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+INSERT INTO actions (mob_id, hunter_id, time, type, success)
 VALUES (8, 5, '4420-01-26', 'kill', false);
