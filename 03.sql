@@ -66,9 +66,9 @@ CREATE TABLE mobs
     speed              integer CHECK (speed > 0)
 );
 
--- Таблица охоты
-DROP TABLE IF EXISTS hunts CASCADE;
-CREATE TABLE hunts
+-- Таблица действий (охоты)
+DROP TABLE IF EXISTS actions CASCADE;
+CREATE TABLE actions
 (
     mob_id    integer REFERENCES mobs (mob_id),
     hunter_id integer REFERENCES hunters (hunter_id),
