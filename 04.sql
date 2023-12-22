@@ -1,3 +1,4 @@
+
 SET SEARCH_PATH = interplanetary_hunters_db;
 
 -- Add to the users table
@@ -56,16 +57,16 @@ VALUES (3, 'Forest');
 
 -- Add to the hunters table
 INSERT INTO hunters (user_id, biome_id, planet_of_birth_id, name, level, speed)
-VALUES (1, 1, 1, 'Yaso', 1, 1);
+VALUES (1, 5, 3, 'Yaso', 1, 1);
 
 INSERT INTO hunters (user_id, biome_id, planet_of_birth_id, name, level, speed)
-VALUES (2, 2, 2, 'Zed', 1, 2);
+VALUES (2, 5, 3, 'Zed', 1, 2);
 
 INSERT INTO hunters (user_id, biome_id, planet_of_birth_id, name, level, speed)
-VALUES (2, 1, 3, 'Keil', 1, 3);
+VALUES (2, 1, 1, 'Keil', 1, 3);
 
 INSERT INTO hunters (user_id, biome_id, planet_of_birth_id, name, level, speed)
-VALUES (3, 1, 4, 'Luna', 2, 4);
+VALUES (3, 1, 1, 'Luna', 2, 4);
 
 INSERT INTO hunters (user_id, biome_id, planet_of_birth_id, name, level, speed)
 VALUES (1, 2, 1, 'LuLu', 2, 5);
@@ -92,9 +93,46 @@ VALUES (5, 5, 'Sword');
 
 
 -- Add to the mobs table
--- INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (5, 3, 'walking', 'Zombie', 2);
 
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (5, 3, 'jumping', 'Green Slime', 1);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (5, 3, 'jumping', 'Blue Slime', 1);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (5, 3, 'walking', 'Possessed Armor', 4);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (1, 1, 'flying', 'Vulture', 3);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (1, 1, 'jumping', 'Sand Slime', 1);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (1, 1, 'walking', 'Mummy', 5);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (2, 1, 'flying', 'Lava Bat', 5);
+
+INSERT INTO mobs (biome_id, planet_of_birth_id, species, name, speed)
+VALUES (2, 1, 'jumping', 'Lava Slime', 2);
 
 
 -- Add to the hunts table
--- INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+VALUES (1, 1, '4420-01-01', 'catch', false);
+
+INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+VALUES (2, 2, '4420-01-22', 'kill', true);
+
+INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+VALUES (5, 3, '4420-01-23', 'catch', true);
+
+INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+VALUES (6, 4, '4420-01-25', 'kill', true);
+
+INSERT INTO hunts (mob_id, hunter_id, time, type, success)
+VALUES (8, 5, '4420-01-26', 'kill', false);
